@@ -1,0 +1,262 @@
+:root {
+  --dark-blue: #222222;
+  --pink: #f1e4e6;
+  --dark-pink: #f16d7f;
+  --brown: #474040;
+  --dark-grey: #222222;
+  --light-grey: #9f9f9f;
+  --black: #000000;
+}
+
+body {
+  font-family: Lato;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 19px;
+}
+
+.container {
+  width: 1138px;
+  margin: 0 auto;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0);
+}
+
+.header {
+  background-color: var(--dark-blue);
+}
+
+.header__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 75px;
+}
+
+.header__navigation {
+  display: none;
+}
+
+.header__button {
+  background-color: transparent;
+  border: none;
+  margin: 0 34px 0 0;
+}
+
+.header__logo {
+  margin: 0 10px 0 0;
+}
+
+.header__person-link {
+  margin: 0 34px 0 0;
+}
+
+.brand {
+  display: flex;
+  margin: 0 0 63px;
+}
+
+.brand__title {
+  font-size: 48px;
+  font-weight: 900;
+  line-height: 58px;
+  text-transform: uppercase;
+}
+
+.brand__title-wrapper {
+  padding: 0 0 0 91px;
+  flex-grow: 1;
+  background-color: var(--pink);
+  display: flex;
+  align-items: center;
+}
+
+.brand__subtitle {
+  display: block;
+  font-size: 37px;
+  font-weight: 700;
+  line-height: 44px;
+}
+
+.brand__subtitle-pink {
+  color: var(--dark-pink);
+}
+
+.offers__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.offers__item {
+  color: white;
+  width: 360px;
+  min-height: 260px;
+  background-color: var(--brown);
+  margin: 0 0 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.offers__item--woman {
+  background-image: url(../img/women.jpg);
+}
+
+.offers__item--man {
+  background-image: url(../img/man1.jpg);
+}
+.offers__item--kds {
+  background-image: url(../img/kids.jpg);
+}
+
+.offers__item--accesories {
+  background-image: url(../img/accesories.jpg);
+  width: 100%;
+  margin: 0;
+}
+
+.products__title {
+  font-size: 30px;
+  line-height: 36px;
+  text-align: center;
+  color: var(--dark-grey);
+  padding-top: 97px;
+}
+
+.products__subtitle {
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  color: var(--light-grey);
+  padding-top: 6px;
+  padding-bottom: 48px;
+}
+
+.products_list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.products__item {
+  width: 360px;
+  min-height: 420px;
+  margin: 0 0 30px;
+  background: #f8f8f8;
+}
+
+.item__title {
+  font-size: 13px;
+  line-height: 16px;
+  color: var(--black);
+  text-transform: uppercase;
+  margin-top: 26px;
+}
+
+.item__subtitle {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 17px;
+  margin-top: 13px;
+  color: var(--light-grey);
+}
+
+.price {
+  font-size: 16px;
+  line-height: 19px;
+  color: var(--dark-pink);
+  margin-top: 18px;
+}
+
+.products__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button_link {
+  margin-top: 63px;
+  font-size: 16px;
+  line-height: 19px;
+  text-decoration: none;
+  padding: 14px 15px;
+  border: 1px solid #ff6a6a;
+  color: #f26376;
+}
+
+.info {
+  background-color: var(--dark-blue);
+}
+
+.info__list {
+  min-height: 341px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 96px 0 0 0;
+}
+
+.info__title {
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+  color: #fbfbfb;
+  margin: 28px 0 16px 0;
+}
+
+.info__subtitle {
+  font-size: 13.972px;
+  line-height: 17px;
+  text-align: center;
+  color: #fbfbfb;
+}
+
+.footer {
+  background-color: var(--dark-blue);
+}
+
+.footer__up {
+  background-image: url(../img/footer.jpg);
+  min-height: 448px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.footer__subtitle {
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+  color: #222224;
+}
+
+.footer__bottom {
+  min-height: 79px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+}
+
+.facebook,
+.twitter,
+.pinterset {
+  background: #ffffff;
+}
+
+.insta {
+  background: #f16d7f;
+}
