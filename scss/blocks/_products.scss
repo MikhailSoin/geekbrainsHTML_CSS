@@ -1,0 +1,216 @@
+.products {
+  .products__title {
+    font-size: 30px;
+    line-height: 36px;
+    text-align: center;
+    color: $dark-blue;
+    padding-top: 97px;
+  }
+
+  .products__subtitle {
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    color: $light-grey;
+    padding-top: 6px;
+    padding-bottom: 48px;
+  }
+  .card {
+    width: 100%;
+    max-width: 360px;
+    margin: 0;
+    border-radius: 0;
+    border: none;
+  }
+
+  .cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .card__picture {
+    position: relative;
+    width: 100%;
+  }
+
+  .card__img {
+    max-width: 100%;
+    height: auto;
+    align-self: flex-start;
+  }
+
+  .card__hover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(58, 56, 56, 0.86);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease;
+  }
+
+  .card__picture:hover .card__hover {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .card__btn {
+    border: 1px solid $white;
+    color: $white;
+    outline: none;
+    background: none;
+    padding: 10px 16px 9px 13px;
+    font-style: none;
+  }
+
+  .card__btn:hover {
+    border: $dark-pink;
+    background: $dark-pink;
+  }
+
+  .card__btn__icon {
+    margin-right: 11px;
+  }
+
+  .card__info {
+    width: 100%;
+    height: 160px;
+    background: $light-white;
+    padding: 24px 20px 20px;
+    font-size: 14px;
+    font-family: Lato;
+  }
+
+  .card__title {
+    font-family: Lato;
+    font-size: 13px;
+    line-height: 16px;
+    color: $black;
+    margin-bottom: 13px;
+    text-decoration: none;
+  }
+
+  .card__title:hover {
+    color: $dark-pink;
+  }
+
+  .card__description {
+    font-family: Lato;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    color: $grayish-green;
+    margin: 13px 0 18px;
+  }
+
+  .card__price {
+    font-family: Lato;
+    font-size: 16px;
+    line-height: 19px;
+    color: $dark-pink;
+  }
+
+  .browse {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .browse__button {
+    margin-top: 18px;
+    margin-bottom: 95px;
+    border: 1px solid $faded-carmine-pink;
+    background-color: $white;
+    color: $dark-pink;
+    cursor: pointer;
+    padding: 14px 34px;
+    text-decoration: none;
+  }
+
+  .browse__button:hover {
+    border: $dark-pink;
+    background: $dark-pink;
+    color: $white;
+    border: 1px solid $faded-carmine-pink;
+  }
+
+  .close-cart {
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin-top: 28px;
+    margin-right: 22px;
+    max-height: 18px;
+  }
+
+  /*.products_list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .products__item {
+    width: 360px;
+    min-height: 582px;
+    margin: 0 0 30px;
+    background: $light-white;
+  }
+
+  .product_img:hover {
+    background: rgba(58, 56, 56, 0.86);
+  }
+
+  .item__title {
+    font-size: 13px;
+    line-height: 16px;
+    color: $black;
+    text-transform: uppercase;
+    margin: 18px;
+  }
+
+  .item__subtitle {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    margin: 18px;
+    color: $light-grey;
+  }
+
+  .price {
+    font-size: 16px;
+    line-height: 19px;
+    color: $dark-pink;
+    margin: 18px;
+  }
+
+  .products__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .button_link {
+    font-size: 16px;
+    line-height: 19px;
+    text-decoration: none;
+    margin: 49px 0 96px 0;
+    padding: 15px 39px;
+    border: 1px solid $faded-carmine-pink;
+    color: $pale-pink;
+  }
+
+  .button_link:hover,
+  .button_link:focus {
+    background: $dark-pink;
+    border: 1px solid $faded-carmine-pink;
+    color: $white;
+    cursor: pointer;
+  }
+
+  .button_link:active {
+    color: $white;
+  }*/
+}
