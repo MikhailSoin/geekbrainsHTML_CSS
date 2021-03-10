@@ -1,0 +1,134 @@
+.header {
+    background-color: $black-color;
+    position: relative;
+
+    .header__wrapper {
+        min-height: 75px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    .header__logo-wrapper {
+        display: flex;
+        align-items: center;
+    }
+    
+    .header__logo {
+        margin: 0 41px 0 0;
+        transition: opacity 700ms, transform 700ms;
+    }
+    
+    .header__search {
+        display: none;
+        border-radius: 50px;
+        min-height: 35px;
+        margin-left: 10px;
+        padding-left: 10px;
+        border: none;
+        transition: display 700ms, display 700ms;
+    }
+    
+    .header__logo:hover, .header__logo:focus, .header__button:focus, .header__button:hover {
+        opacity: 0.5;
+        transform: scale(1.1);
+    }
+
+    .header__logo-wrapper:focus, .header__logo-wrapper:hover, .header__search:hover, .header__search:focus {
+        .header__search {
+            display: block;
+            width: 100px;
+        }    
+    }
+    
+    .header__list {
+        display: flex;
+    }
+    
+    .header__nav {
+        display: none;
+        position: absolute;
+        left: 85.2%;
+        top: 75px;
+        width: 14.5%;
+        min-height: 764px;
+        background-color: #fff;
+        .header__nav-img {
+            margin-top: 16px;
+            margin-left: 12.6%;
+        }
+        
+        .header__nav-heading {
+            margin-top: 9px;
+            margin-left: 34px;
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 17px;
+            text-transform: uppercase;
+        }
+        
+        .header__nav-list {
+            margin-top: 4px;
+            margin-left: 33px;
+        }
+        
+        .header__nav_part-heading {
+            margin-top: 20px;
+            color: $pink-dark-color;
+            text-transform: uppercase;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 17px;
+        }
+        
+        .header__nav_part-list {
+            margin-top: 1px;
+            margin-left: 22px;
+        }
+        
+        .header__nav_part-item {
+            margin-top: 11px;
+        }
+        
+        .header__nav_part-link:focus, .header__nav_part-link:hover {
+            opacity: 0.8;
+            color: $pink-dark-color;
+        }
+        
+        .header__nav_part-link {
+            text-decoration: none;
+            color: $grey-menu-color;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 17px;
+        }
+        
+        @include tablet {
+            width: 40%;
+            left: 60%;
+        }
+
+        @include mobile {
+            width: 100%;
+            left: 0;
+        }
+
+    }
+    
+    .header__button {
+        background-color: transparent;
+        border: none;
+        margin: 0 0 0 33px;
+        transition: opacity 700ms, transform 700ms;
+
+        @include tablet {
+            margin-left: 25px;
+        }
+    }
+
+    .header__button_hide {
+        @include mobile {
+            display: none;
+        }
+    }
+}
