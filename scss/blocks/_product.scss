@@ -1,14 +1,21 @@
 .product {
+<<<<<<< HEAD
     position: relative;             /*внёс изменения*/
+=======
+>>>>>>> b9ec70f329f9f566b851fdc00a9a692e5af92256
   .product__info {
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     min-height: 601px;
+<<<<<<< HEAD
     margin-top: -64px;
     padding: 64px;
     background: white;
+=======
+    margin-top: 64px;
+>>>>>>> b9ec70f329f9f566b851fdc00a9a692e5af92256
   }
 
   .product__header {
