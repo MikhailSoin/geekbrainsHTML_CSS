@@ -4,7 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Главная</title>
+    <title>Каталог</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
@@ -74,42 +76,41 @@
             </nav>
         </div>
     </header>
-    <main class="main">
-        <section class="intro">
-            <div class="intro__wrapper container">
-                <img src="./img/man-in-jacket.png" alt="man" class="intro__img">
-                <div class="intro__heading-wrapper ">
-                    <h1 class="intro__heading">the brand<span class="intro__text">of luxerious <span
-                                class="intro__pink">fashion</span></span></h1>
-                </div>
-                <div class="intro__overlay" id="overlayMenu"></div>
+    <main>
+        <section class="top__wrapper">
+            <div class="product__wrapper container">
+                <h1 class="top__header">new arrivals</h1>
+                <h2 class="product__header">home / men / <span class="product__pink">new arrivals</span></h2>
             </div>
         </section>
-
-        <section class="stock">
-            <h2 class="visually-hidden">Stock</h2>
-            <ul class="stock__list container">
-                <li class="stock__item stock__item--woman">
-                    <h3 class="stock__heading">30% off</h3>
-                    <p class="stock__text">for women</p>
-                </li>
-                <li class="stock__item stock__item--man">
-                    <h3 class="stock__heading">hot deal</h3>
-                    <p class="stock__text">for men</p>
-                </li>
-                <li class="stock__item stock__item--kid">
-                    <h3 class="stock__heading">new arrivals</h3>
-                    <p class="stock__text">for kids</p>
-                </li>
-                <li class="stock__item stock__item--shoes">
-                    <h3 class="stock__heading">luxirous & trendy</h3>
-                    <p class="stock__text">accesories</p>
-                </li>
-            </ul>
-        </section>
         <section class="featured container">
-            <h2 class="featured__heading">Fetured Items</h2>
-            <p class="featured__heading-text">Shop for items based on what we featured in this week</p>
+            <h2 class="visually-hidden">catalog</h2>
+            <div class="featured__management container">
+                <button class="featured__filter" type="button" id="filter">
+                    <span class="featured__filter-text">Filter</span>
+                    <img src="./img/filter.svg" class="featured__filter-img" alt="Flt">
+                </button>
+                <div class="featured__dropdowns">
+                    <select class="form-select featured__select" aria-label="Default select example">
+                        <option selected>trending now</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                    </select>
+                    <select class="form-select featured__select" aria-label="Default select example">
+                        <option selected>size</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                    </select>
+                    <select class="form-select featured__select" aria-label="Default select example">
+                        <option selected>price</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                    </select>
+                </div>
+            </div>
             <ul class="featured__list">
                 <li class="featured__item">
                     <img src="./img/man-in-coat.jpg" alt="man in coat" class="featured__img">
@@ -123,7 +124,7 @@
                                 alt="basket" width="32" height="32"> Add to Cart</button></div>
                 </li>
                 <li class="featured__item">
-                    <img src="./img/woman-in-suit.jpg" alt="woman in suit" class="featured__img">
+                    <img src="./img/red-jacket.jpg" alt="woman in suit" class="featured__img">
                     <h3 class="featured__header">ELLERY X M'O CAPSULE</h3>
                     <p class="featured__text">Known for her sculptural takes on traditional tailoring, Australian
                         arbiter
@@ -134,7 +135,18 @@
                                 alt="basket" width="32" height="32"> Add to Cart</button></div>
                 </li>
                 <li class="featured__item">
-                    <img src="./img/man-in-hat.jpg" alt="man in hat" class="featured__img">
+                    <img src="./img/man-in-hat.jpg" alt="woman in cardigan" class="featured__img">
+                    <h3 class="featured__header">ELLERY X M'O CAPSULE</h3>
+                    <p class="featured__text">Known for her sculptural takes on traditional tailoring, Australian
+                        arbiter
+                        of cool Kym Ellery
+                        teams up with Moda Operandi.</p>
+                    <p class="featured__price">$52.00</p>
+                    <div class="featured__overlay"><button class="featured__overlay-btn"><img src="./img/basket.svg"
+                                alt="basket" width="32" height="32"> Add to Cart</button></div>
+                </li>
+                <li class="featured__item">
+                    <img src="./img/man-white-t-shirt.jpg" alt="man in hat" class="featured__img">
                     <h3 class="featured__header">ELLERY X M'O CAPSULE</h3>
                     <p class="featured__text">Known for her sculptural takes on traditional tailoring, Australian
                         arbiter
@@ -156,7 +168,7 @@
                                 alt="basket" width="32" height="32"> Add to Cart</button></div>
                 </li>
                 <li class="featured__item">
-                    <img src="./img/aquamarine-suit.jpg" alt="woman in aquamarine suit " class="featured__img">
+                    <img src="./img/man-baseball.jpg" alt="woman in aquamarine suit " class="featured__img">
                     <h3 class="featured__header">ELLERY X M'O CAPSULE</h3>
                     <p class="featured__text">Known for her sculptural takes on traditional tailoring, Australian
                         arbiter
@@ -167,7 +179,29 @@
                                 alt="basket" width="32" height="32"> Add to Cart</button></div>
                 </li>
                 <li class="featured__item">
-                    <img src="./img/woman-in-cardigan.jpg" alt="woman in cardigan" class="featured__img">
+                    <img src="./img/man-office.png" alt="woman in cardigan" class="featured__img">
+                    <h3 class="featured__header">ELLERY X M'O CAPSULE</h3>
+                    <p class="featured__text">Known for her sculptural takes on traditional tailoring, Australian
+                        arbiter
+                        of cool Kym Ellery
+                        teams up with Moda Operandi.</p>
+                    <p class="featured__price">$52.00</p>
+                    <div class="featured__overlay"><button class="featured__overlay-btn"><img src="./img/basket.svg"
+                                alt="basket" width="32" height="32"> Add to Cart</button></div>
+                </li>
+                <li class="featured__item">
+                    <img src="./img/man-italiano.jpg" alt="woman in cardigan" class="featured__img">
+                    <h3 class="featured__header">ELLERY X M'O CAPSULE</h3>
+                    <p class="featured__text">Known for her sculptural takes on traditional tailoring, Australian
+                        arbiter
+                        of cool Kym Ellery
+                        teams up with Moda Operandi.</p>
+                    <p class="featured__price">$52.00</p>
+                    <div class="featured__overlay"><button class="featured__overlay-btn"><img src="./img/basket.svg"
+                                alt="basket" width="32" height="32"> Add to Cart</button></div>
+                </li>
+                <li class="featured__item">
+                    <img src="./img/man-beach.jpg" alt="woman in cardigan" class="featured__img">
                     <h3 class="featured__header">ELLERY X M'O CAPSULE</h3>
                     <p class="featured__text">Known for her sculptural takes on traditional tailoring, Australian
                         arbiter
@@ -178,9 +212,31 @@
                                 alt="basket" width="32" height="32"> Add to Cart</button></div>
                 </li>
             </ul>
-
-            <a href="catalog.html" class="featured__browse">Browse All Product</a>
-
+            <div class="featured__pagination">
+                <nav aria-label="Page navigation example">
+                    <ul class="pagination">
+                        <li class="page-item">
+                            <a class="page-link" href="#" aria-label="Previous">
+                                <span aria-hidden="true">&laquo;</span>
+                            </a>
+                        </li>
+                        <li class="page-item"><a class="page-link" href="#">1</a></li>
+                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                        <li class="page-item"><a class="page-link" href="#">4</a></li>
+                        <li class="page-item"><a class="page-link" href="#">5</a></li>
+                        <li class="page-item"><a class="page-link" href="#">7</a></li>
+                        <li class="page-item"><a class="page-link" href="#">8</a></li>
+                        <li class="page-item"><a class="page-link" href="#">9</a></li>
+                        <li class="page-item"><a class="page-link" href="#">10</a></li>
+                        <li class="page-item">
+                            <a class="page-link" href="#" aria-label="Next">
+                                <span aria-hidden="true">&raquo;</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
         </section>
         <section class="advantages">
             <h2 class="visually-hidden">Advantages</h2>
@@ -205,27 +261,8 @@
                 </li>
             </ul>
         </section>
-    </main>
-    <footer class="footer">
-        <section class="footer__top ">
-            <div class="footer__wrapper  container">
-                <div class="footer__quote">
-                    <img src="./img/face-icon.svg" alt="face">
-                    <p class="footer__quote-text">“Vestibulum quis porttitor dui! Quisque <span
-                            class="footer__coursive">viverra nunc mi, a pulvinar purus condimentum“</span></p>
-                </div>
-                <form class="footer__form" action="submit">
-                    <h2 class="footer__heading">subscribe</h2>
-                    <p class="footer__text"> for our newletter and promotion</p>
-                    <div class="footer__subscribe-wrapper">
-                        <input class="footer__input" type="email" placeholder="Enter Your Email">
-                        <button class="footer__subscribe" type="submit">Subscribe</button>
-                    </div>
-                </form>
-            </div>
-        </section>
         <section class="footer__bottom-bg">
-            <h2 class="visually-hidden">copyright</h2>
+            <h2 class="visually-hidden">footer__copyright</h2>
             <div class="footer__bottom container">
                 <p class="footer__copyright">© 2021 Brand All Rights Reserved.</p>
                 <ul class="footer__list">
@@ -285,7 +322,7 @@
                 </ul>
             </div>
         </section>
-    </footer>
+        </footer>
 </body>
 
 </html>

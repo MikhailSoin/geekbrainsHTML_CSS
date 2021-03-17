@@ -1,0 +1,155 @@
+.registration__body {
+    margin-top: 64px;
+    display: flex;
+    justify-content: space-between;
+
+    @include mobile {
+        flex-direction: column;
+        justify-content: space-around;
+    }
+}
+
+.registration__form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    width: 31.5%;
+    @include mobile {
+        width: 95%;
+    }
+}
+
+.registration__label {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    margin-top: 33px;
+}
+
+.registration__input {
+    margin-top: 20px;
+    border: 1px solid #A4A4A4;
+    height: 44px;
+}
+
+.registration__input:hover, .registration__input:focus {
+    background-color: $beige-color;
+}
+
+.registration::placeholder {
+    margin-left: 17px;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 16px;
+}
+
+.registration__label-radio {
+    font-weight: 300;
+    font-style: normal;
+    font-size: 11px;
+    line-height: 13px;
+    margin-left: 10px;
+}
+
+.registration__radio {
+    margin-top: 31px;
+}
+
+.registration__radio-wrapper {
+    display: flex;
+}
+
+.registration__instructions {
+    font-weight: 300;
+    font-style: normal;
+    font-size: 13px;
+    line-height: 16px;
+    color: #B1B1B1;
+    margin-top: 15px;
+    width:100%;
+}
+
+.registration__submit {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: $pink-dark-color;
+    width: 50%;
+    height: 50px;
+    border-style: none;
+    font-weight:400;
+    font-size: 14px;
+    line-height: 17px;
+    color: white;
+    text-transform: uppercase;
+    margin-top: 55px;
+    margin-bottom: 96px;
+    @include mobile {
+        margin-bottom: 0;
+    }
+}
+
+.registration__submit:hover, .registration__submit:focus {
+    background-color: $pink-browse-color;
+}
+
+.registration__loyalty {
+    list-style: none;
+    margin-top: 64px;
+    width: 57%;
+    @include mobile {
+        width: 95%;
+        margin-bottom: 100px;
+    }
+}
+
+.registration__loyalty-header {
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 29px;
+    text-transform: uppercase;
+    @include tablet {
+        font-size: 16px;
+        line-height: 19px;
+    }
+}
+
+.registration__loyalty-text {
+    margin-top: 22px;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 24px;
+    line-height: 29px;
+    @include tablet {
+        font-size: 16px;
+        line-height: 19px;
+    }
+}
+
+.registration__loyalty-list {
+    list-style: none;
+    margin-top: 5px;
+    margin-left: -43px;
+    
+}
+
+.registration__loyalty-list_item {
+    margin-top: 16px;
+    margin-left: 20px;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 24px;
+    line-height: 29px;
+        @include tablet {
+        font-size: 16px;
+        line-height: 19px;
+    }
+}
+
+.registration__loyalty-list_item:before {
+    content: url('../img/done.svg');
+    margin-right: 23px;
+    margin-left: 20px;
+}
