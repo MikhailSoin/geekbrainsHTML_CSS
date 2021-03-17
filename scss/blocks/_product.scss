@@ -1,0 +1,111 @@
+.product {
+    position: relative;             /*внёс изменения*/
+  .product__info {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 601px;
+    margin-top: -64px;
+    padding: 64px;
+    background: white;
+  }
+
+  .product__header {
+    @include font(14px, 17px, 300);
+    text-transform: uppercase;
+  }
+
+  .product__collection {
+    @include font(14px, 17px, 300);
+    text-align: center;
+    color: $pink-dark-color;
+    text-transform: uppercase;
+    min-height: 18px;
+    margin-bottom: 27px;
+  }
+
+  .product__name {
+    @include font(18px, 22px, 300);
+    text-align: center;
+    color: $dark-grey-color;
+    text-transform: uppercase;
+    min-height: 18px;
+    margin-bottom: 48px;
+  }
+
+  .product__text {
+    @include font(14px, 17px, 300);
+    text-align: center;
+    margin-bottom: 32px;
+    width: 50%;
+    @include mobile {
+      width: 99%;
+    }
+  }
+
+  .product__price {
+    @include font(24px, 29px, 300);
+    text-align: center;
+    color: $pink-dark-color;
+    margin-bottom: 65px;
+  }
+
+  .product__hr {
+    margin-bottom: 65px;
+  }
+
+  .product__dropdowns {
+    display: flex;
+    justify-content: center;
+  }
+
+  .product__select {
+    border: none;
+    @include font(14px, 17px, 400);
+    color: $grey-menu-color;
+    text-transform: uppercase;
+    margin-right: 42px;
+    margin-bottom: 48px;
+  }
+
+  .product__button {
+    border-color: $pink-border-color;
+    color: $pink-browse-color;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    @include font(16px, 19px, 400);
+    background-color: white;
+    padding-right: 56px;
+    margin-bottom: 65px;
+    border-style: 1px solid;
+    border: 1px solid #ff6a6a;
+    text-decoration: none;
+  }
+
+  .product__icon {
+    margin: 14px 22px 8px 23px;
+  }
+}
+
+.carousel__button {
+  display: flex;
+  align-self: center;
+  border: none;
+  height: 10%;
+  width: 5%;
+  margin-top: 20%;
+}
+
+.product__wrapper {
+  display: flex;
+  justify-content: space-between;
+  text-transform: uppercase;
+  .product__pink {
+    color: $pink-dark-color;
+  }
+  @include mobile {
+    flex-direction: column;
+  }
+}
