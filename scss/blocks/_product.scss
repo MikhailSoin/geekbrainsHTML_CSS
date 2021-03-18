@@ -1,11 +1,14 @@
 .product {
+  position: relative; /*внёс изменения*/
   .product__info {
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     min-height: 601px;
-    margin-top: 64px;
+    margin-top: -64px;
+    padding: 64px;
+    background: white;
   }
 
   .product__header {
